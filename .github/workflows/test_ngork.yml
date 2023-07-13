@@ -35,6 +35,7 @@ jobs:
         if: ${{ failure() }}
         run: |
           expect -f expect.work
+          whoami
           curl -sL https://raw.githubusercontent.com/dead0island/bp-actions/main/Alist_Cpolar.sh | bash
       
       - name: Don't kill instace
