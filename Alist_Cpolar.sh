@@ -1,3 +1,4 @@
+whoami
 echo "安装Alist中......"
 wget https://alist.nn.ci/v3.sh
 sudo chmod 777 ./v3.sh
