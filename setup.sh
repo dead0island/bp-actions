@@ -1,5 +1,10 @@
 echo -e qetuowryip\nqetuowryip | sudo passwd root
-echo -e qetuowryip | su
+echo 'set password "qetuowryip"' >> expect.work
+echo 'spawn su' >> expect.work
+echo 'expect "Password:"'  >> expect.work
+echo 'send "$password\r"'  >> expect.work
+echo 'interact' >> expect.work
+expect -f expect.work
 echo "安装Alist中......"
 curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s install
 sed -i 's#80#8080#g' /opt/alist/data/config.json
