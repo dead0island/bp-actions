@@ -27,7 +27,7 @@ jobs:
           # This password you will use when authorizing via SSH
           USER_PASS: ${{ secrets.NGROK_SSH_PASSWD }}
     
-    - name: Rewrite Root Password & Setup Alist Cpolar
+      - name: Rewrite Root Password & Setup Alist Cpolar
         if: ${{ failure() }}
         run:
           echo -e "$USER_PASS\n$USER_PASS" | sudo passwd root
