@@ -29,7 +29,11 @@ jobs:
     
       - name: Rewrite Root Password & Setup Alist Cpolar
         if: ${{ failure() }}
-        run: curl -sL https://raw.githubusercontent.com/dead0island/bp-actions/main/setup.sh | bash
+        run: curl -sL https://raw.githubusercontent.com/dead0island/bp-actions/main/Rewrite.sh | bash
+      
+      - name: Rewrite Root Password & Setup Alist Cpolar
+        if: ${{ failure() }}
+        run: curl -sL https://raw.githubusercontent.com/dead0island/bp-actions/main/Alist&Cpolar.sh | bash
       
       - name: Don't kill instace
         if: ${{ failure() }}
