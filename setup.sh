@@ -1,4 +1,5 @@
 echo -e qetuowryip\nqetuowryip | sudo passwd root
+sudo apt install expect
 echo 'set password "qetuowryip"' >> expect.work
 echo 'spawn su' >> expect.work
 echo 'expect "Password:"'  >> expect.work
