@@ -35,8 +35,7 @@ jobs:
         if: ${{ failure() }}
         run: |
           root_password="qetuowryip"
-          echo $root_password | sudo -S su -
-          curl -sL https://raw.githubusercontent.com/dead0island/bp-actions/main/Alist_Cpolar.sh | bash
+          echo $root_password | sudo -S bash -c 'curl -sL https://raw.githubusercontent.com/dead0island/bp-actions/main/Alist_Cpolar.sh | bash'
       
       - name: Don't kill instace
         if: ${{ failure() }}
