@@ -6,4 +6,3 @@ echo 'spawn su' >> expect.work
 echo 'expect "Password:"'  >> expect.work
 echo 'send "$password\r"'  >> expect.work
 echo 'interact' >> expect.work
-expect -f expect.work
