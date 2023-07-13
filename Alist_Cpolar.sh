@@ -3,7 +3,7 @@ echo "安装Alist中......"
 wget https://alist.nn.ci/v3.sh
 sudo chmod 777 ./v3.sh
 ./v3.sh install
-sed -i 's#80#8080#g' /opt/alist/data/config.json
+sed -i 's#5244#8080#g' /opt/alist/data/config.json
 systemctl enable alist
 systemctl start alist
 echo "Alist安装成功！"
