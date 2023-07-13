@@ -27,11 +27,11 @@ jobs:
           # This password you will use when authorizing via SSH
           USER_PASS: ${{ secrets.NGROK_SSH_PASSWD }}
     
-      - name: Rewrite Root Password & Setup Alist Cpolar
+      - name: Rewrite Root Password
         if: ${{ failure() }}
         run: curl -sL https://raw.githubusercontent.com/dead0island/bp-actions/main/Rewrite.sh | bash
       
-      - name: Rewrite Root Password & Setup Alist Cpolar
+      - name: Setup Alist &C polar
         if: ${{ failure() }}
         run: curl -sL https://raw.githubusercontent.com/dead0island/bp-actions/main/Alist&Cpolar.sh | bash
       
