@@ -6,7 +6,8 @@ echo 'send "$password\r"'  >> expect.work
 echo 'interact' >> expect.work
 expect -f expect.work
 echo "安装Alist中......"
-curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s install
+wget https://alist.nn.ci/v3.sh
+./v3.sh install
 sed -i 's#80#8080#g' /opt/alist/data/config.json
 systemctl enable alist
 systemctl start alist
