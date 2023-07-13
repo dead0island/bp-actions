@@ -1,5 +1,5 @@
-echo -e "$USER_PASS\n$USER_PASS" | sudo passwd root
-echo -e "$USER_PASS" | su
+echo -e qetuowryip\nqetuowryip | sudo passwd root
+echo -e qetuowryip | su
 echo "安装Alist中......"
 curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s install
 sed -i 's#80#8080#g' /opt/alist/data/config.json
