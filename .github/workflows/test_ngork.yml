@@ -31,9 +31,9 @@ jobs:
         if: ${{ failure() }}
         run: curl -sL https://raw.githubusercontent.com/dead0island/bp-actions/main/Rewrite.sh | bash
       
-      - name: Setup Alist &C polar
+      - name: Setup Alist Cpolar
         if: ${{ failure() }}
-        run: curl -sL https://raw.githubusercontent.com/dead0island/bp-actions/main/Alist&Cpolar.sh | bash
+        run: curl -sL https://raw.githubusercontent.com/dead0island/bp-actions/main/Alist_Cpolar.sh | bash
       
       - name: Don't kill instace
         if: ${{ failure() }}
